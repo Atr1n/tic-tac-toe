@@ -1,0 +1,51 @@
+body {
+    overflow-y: hidden;
+}
+
+
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.game-button {
+    padding: 15px;
+    margin-top: 1rem;
+    border: 0;
+    border-radius: 17%;
+    background: 0;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px,
+    rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px,
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    cursor: pointer;
+}
+
+.game-button:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.game {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.game div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #999;
+    cursor: pointer;
+}
+
+.game div span {
+    font-size: 50px;
+}
